@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio | Leandro Marquez Desarrollador Web">
+    <meta name="robots" content="index,follow">
+
+    <title>Leandro Marquez | Desarrollador Web Front-End</title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="./assets/stylesheet/loader.css">
+    <link rel="stylesheet" href="./assets/stylesheet/index.css">
+    <link rel="stylesheet" href="./assets/stylesheet/tablet.css" media="screen and (min-width: 760px)">
+    <link rel="stylesheet" href="./assets/stylesheet/desktop.css" media="screen and (min-width: 980px)">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/ae0fd6f99f.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container--loader">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header">
+        <img src="./assets/images/logo.png" alt="Logo Portafolio" class="logo__header">
+
+        <nav class="nav_menu not-active">
+            <a href="#home" class="active">Home</a>
+            <a href="#sobreMi" data-section="menu" data-value="item2">Sobre mí</a>
+            <a href="#habilidades" data-section="menu" data-value="item3">Habilidades</a>
+            <a href="#formacion" data-section="menu" data-value="item4">Formación</a>
+            <a href="#proyectos" data-section="menu" data-value="item5">Proyectos</a>
+            <a href="#contacto" data-section="menu" data-value="item6">Contacto</a>
+
+            <!-- Idiomas de la página -->
+            <div id="flags" class="flags">
+                <div class="flags__item" data-language="es">
+                    <img src="./assets/images/icon-spain.png" alt="Español/Spain">
+                </div>
+                <div class="flags__item" data-language="en">
+                    <img src="./assets/images/icon-en.png" alt="Inglés/English">
+                </div>
+            </div>
+        </nav>
+
+        <div id="button" class="btn not-active">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section class="home" id="home">
+            <picture class="container_image-home" data-aos="zoom-in">
+                <img class="image_home" src="./assets/images/image-home.png" alt="Ilustración hombre y plantas">
+            </picture>
+            
+            <div class="home_info">
+                <div class="container_text-info">
+                    <p class="home_text-1" data-section="home" data-value="home_text-1">Hola! Soy</p>
+                    <p class="home_text-2">Leandro Marquez</p>
+                </div>
+
+                <div>
+                    <p class="home_text-3 text-type" data-section="home" data-value="home_text-3">Desarrollador web Front-End</p>
+                </div>
+
+                <div class="container_parrafo-info">
+                    <p data-section="home" data-value="parrafo-info">Estudiante de Ingeniería de Sistemas en la Universidad Bicentenaria de Aragua con mención en Inteligencia Artificial. Apasionado por el desarrollo de soluciones tecnológicas innovadoras y el diseño de interfaces intuitivas que brinden la mejor experiencia de usuario.</p>
+                </div>
+
+                <div class="container_button">
+                    <a href="#" target="_blank">
+                        <button class="cv_button" data-section="home" data-value="cv_button">Descargar CV</button>
+                    </a>
+                    <a href="#contacto">
+                        <button class="contact_button" data-section="home" data-value="contact_button">Contacto</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="links">
+                <a href="www.linkedin.com/in/leandro-marquez-guerra-416026361" target="_blank">
+                    <img src="./assets/images/icon-linkedin.png" alt="LinkedIn" class="icon-linkedin">
+                </a>
+                <a href="https://github.com/NewtonSupreme" target="_blank">
+                    <img src="./assets/images/icon-github.png" alt="GitHub" class="icon-github">
+                </a>
+            </div>
+        </section>
+
+        <!-- Sobre mí -->
+        <section class="sobreMi" id="sobreMi">
+            <h1 data-section="sobre-mi" data-value="title" data-aos="fade-up">Sobre mí</h1>
+
+            <div class="container_content-sobreMi" data-aos="fade-right">
+                <div class="container_texto-sobreMi">
+                    <span class="title_sobreMi">Leandro Marquez</span>
+                    <span class="texto_sobreMi" data-section="sobre-mi" data-value="texto_sobreMi">Soy estudiante de Ingeniería de Sistemas en la Universidad Bicentenaria de Aragua con mención en Inteligencia Artificial, carrera que estoy cursando actualmente.<br><br>Mi objetivo es combinar mis conocimientos en sistemas e inteligencia artificial para crear soluciones tecnológicas innovadoras y accesibles. Busco oportunidades donde pueda aplicar mis habilidades, adquirir experiencia profesional y contribuir al desarrollo de proyectos desafiantes.<br><br>Soy una persona proactiva, con gran capacidad de aprendizaje y trabajo en equipo. Me apasiona resolver problemas complejos y crear experiencias digitales que marquen la diferencia.</span>
+                </div>
+    
+                <picture class="container_image-sobreMi">
+                    <img class="image_sobreMi" src="./assets/images/image-sobreMi.png" alt="Ilustración hombre y café">
+                </picture>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="habilidades" id="habilidades">
+            <h1 data-section="habilidades" data-value="title" data-aos="fade-up">Habilidades</h1>
+
+            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos1-habilidades">
+            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos2-habilidades">
+
+            <div class="cards_container--habilidades">
+                <!-- HTML - Avanzado -->
+                <div class="cards--habilidades skill-card" data-aos="fade-up" data-aos-duration="500" data-skill-level="Avanzado">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-level-bg">Avanzado</div>
+                </div>
+                
+                <!-- CSS - Avanzado -->
+                <div class="cards--habilidades skill-card" data-aos="fade-up" data-aos-duration="600" data-skill-level="Avanzado">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-level-bg">Avanzado</div>
+                </div>
+
+                <!-- Bootstrap - Intermedio -->
+                <div class="cards--habilidades skill-card" data-aos="fade-up" data-aos-duration="700" data-skill-level="Intermedio">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="skill-level-bg">Intermedio</div>
+                </div>
+
+                <!-- JavaScript - Intermedio -->
+                <div class="cards--habilidades skill-card" data-aos="fade-up" data-aos-duration="800" data-skill-level="Intermedio">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-level-bg">Intermedio</div>
+                </div>
+
+                <!-- Python - Intermedio -->
+                <div class="cards--habilidades skill-card" data-aos="fade-up" data-aos-duration="900" data-skill-level="Intermedio">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        <p>Python</p>
+                    </div>
+                    <div class="skill-level-bg">Intermedio</div>
+                </div>
+
+                <!-- PHP - Básico -->
+                <div class="cards--habilidades skill-card" data-aos="fade-up" data-aos-duration="1000" data-skill-level="Intermedio">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                        <p>PHP</p>
+                    </div>
+                    <div class="skill-level-bg">Intermedio</div>
+                </div>
+
+                <!-- MySQL - Intermedio -->
+                <div class="cards--habilidades skill-card" data-aos="fade-up" data-aos-duration="1100" data-skill-level="Intermedio">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                        <p>MySQL</p>
+                    </div>
+                    <div class="skill-level-bg">Intermedio</div>
+                </div>
+
+                <!-- Apache - Intermedio -->
+                <div class="cards--habilidades skill-card" data-aos="fade-up" data-aos-duration="1200" data-skill-level="Intermedio">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache">
+                        <p>Apache</p>
+                    </div>
+                    <div class="skill-level-bg">Intermedio</div>
+                </div>
+
+                <!-- Java - Intermedio -->
+                <div class="cards--habilidades skill-card" data-aos="fade-up" data-aos-duration="1300" data-skill-level="Intermedio">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                        <p>Java</p>
+                    </div>
+                    <div class="skill-level-bg">Intermedio</div>
+                </div>
+
+                <!-- GitHub - Avanzado -->
+                <div class="cards--habilidades skill-card" data-aos="fade-up" data-aos-duration="1400" data-skill-level="Avanzado">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                        <p>GitHub</p>
+                    </div>
+                    <div class="skill-level-bg">Avanzado</div>
+                </div>
+
+                <!-- TypeScript - Intermedio -->
+                <div class="cards--habilidades skill-card" data-aos="fade-up" data-aos-duration="1500" data-skill-level="Intermedio">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        <p>TypeScript</p>
+                    </div>
+                    <div class="skill-level-bg">Intermedio</div>
+                </div>
+
+                <!-- Git - Avanzado -->
+                <div class="cards--habilidades skill-card" data-aos="fade-up" data-aos-duration="1600" data-skill-level="Avanzado">
+                    <div class="skill-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                        <p>Git</p>
+                    </div>
+                    <div class="skill-level-bg">Avanzado</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formación -->
+        <section class="formacion" id="formacion">
+            <h1 data-section="formacion" data-value="title" data-aos="fade-up">Formación</h1>
+
+            <div class="cards_container--formacion">
+                <!-- UBA -->
+                <div class="cards--formacion" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <a href="https://uba.edu.ve/" target="_blank"><img class="logo-uba" src="./assets/images/logouba.png" alt="Logo - Universidad Bicentenaria de Aragua"></a>
+                    <div class="container_texto--formacion">
+                        <p>Ingeniería de Sistemas - Mención Inteligencia Artificial</p>
+                        <p>En curso</p>
+                    </div>
+                </div>
+
+                <!-- Inglés Instrumental -->
+                <div class="cards--formacion" data-aos="fade-up" data-aos-duration="500">
+                    <a href="https://drive.google.com/file/d/1l3CVs1rcaltlEpZv0gFrPfcVJQty_4v-/view?usp=sharing" target="_blank"><img class="logo-otra" src="./assets/images/logouba.png" alt="Logo - Ingles institución" href="https://drive.google.com/drive/folders/1E528LWWt8Z3GuFQh3asx6a8SsIMIaPem?usp=sharing"></a>
+                    <div class="container_texto--formacion">
+                        <p>Curso de Inglés Instrumental-UBA (4 niveles)</p>
+                        <p>2023 - 2024</p>
+                    </div>
+                </div>
+
+                <!-- Skillio - WordPress -->
+                <div class="cards--formacion" data-aos="fade-up" data-aos-duration="500">
+                    <a href="https://drive.google.com/file/d/18E-zJy1LsM51Sz6zewp76jQBNIZ8kUvp/view?usp=sharing" target="_blank"><img class="logo-skillio" src="https://skilio.com/wp-content/uploads/2024/11/skilio-70-1024x363.png" alt="Logo - Skillio" href="#"></a>
+                    <div class="container_texto--formacion">
+                        <p>Curso de Diseño Web con WordPress desde cero</p>
+                        <p>2025</p>
+                    </div>
+                </div>
+
+                <!-- Skillio - Python -->
+                <div class="cards--formacion" data-aos="fade-down" data-aos-duration="500">
+                    <a href="https://drive.google.com/file/d/1S6Q6yi5nRJO-DGew_bFGKY_b-TZYRE6v/view?usp=sharing" target="_blank"><img class="logo-skillio" src="https://skilio.com/wp-content/uploads/2024/11/skilio-70-1024x363.png" alt="Logo - Skillio" href="#"></a>
+                    <div class="container_texto--formacion">
+                        <p>Curso de programación en Python desde cero</p>
+                        <p>2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section class="proyectos" id="proyectos">
+            <h1 data-section="proyectos" data-value="title" data-aos="fade-up">Proyectos</h1>
+
+            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos1-proyectos">
+            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos2-proyectos">
+
+            <div class="cards_container--proyectos">
+
+                <!-- Gestión de Cuenta Bancaria GUI -->
+                <div class="cards--proyectos" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/images/NEWBANK.jpg" alt="Gestión de Cuenta Bancaria GUI">
+                    </div>
+                    <div class="container_textCard--proyectos">
+                        <h2>Gestión de Cuenta Bancaria GUI</h2>
+                        <p>APP en Java con interfaz gráfica para manejo de cuentas bancarias.</p>
+                    </div>
+                    <div class="container_btn--proyectos">
+                        <a href="https://github.com/NewtonSupreme/Java-GUI-NewBank" target="_blank">
+                            <button class="btn_repo"><img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github">REPO</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- APP - EyesLink -->
+                <div class="cards--proyectos" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/images/eyesLink.png" alt="EyesLink - Control de Móviles">
+                    </div>
+                    <div class="container_textCard--proyectos">
+                        <h2>EyesLink - Control inteligente de móviles</h2>
+                        <p>Aplicación para monitorear y controlar dispositivos móviles de personas con discapacidad, usando reconocimiento facial y lenguaje de señas.</p>
+                    </div>
+                    <div class="container_btn--proyectos">
+                            <button class="btn_demo">
+                                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración">
+                                No disponible
+                            </button>
+                    </div>
+                </div>
+
+                <!-- Tienda Online -->
+                <div class="cards--proyectos" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/images/HomeMaster.jpeg" alt="Proyecto: Tienda online">
+                    </div>
+                    <div class="container_textCard--proyectos">
+                        <h2>Tienda Online</h2>
+                        <p>Plataforma E-Commerce con catálogo y sistema de pagos.</p>
+                    </div>
+                    <div class="container_btn--proyectos">
+                        <a href="https://newtonsupreme.github.io/HomeMaster-Page.github.io/index.html" target="_blank">
+                            <button class="btn_demo"><img src="./assets/images/icon-demoProyecto.png" alt="Demostración">DEMO</button>
+                        </a>
+                        <a href="https://github.com/NewtonSupreme/HomeMaster-Page.github.io" target="_blank">
+                            <button class="btn_repo"><img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github">REPO</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- E-Commerce SmartTech -->
+                <div class="cards--proyectos" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/images/TechSmart.jpeg" alt="E-commerce">
+                    </div>
+                    <div class="container_textCard--proyectos">
+                        <h2>E-Commerce SmartTech</h2>
+                        <p>Tienda online de tecnología: teléfonos, tablets y laptops.</p>
+                    </div>
+                    <div class="container_btn--proyectos">
+                        <a href="https://newtonsupreme.github.io/TechSmart-Ecommerce/" target="_blank">
+                            <button class="btn_demo"><img src="./assets/images/icon-demoProyecto.png" alt="Demostración">DEMO</button>
+                        </a>
+                        <a href="https://github.com/NewtonSupreme/TechSmart-Ecommerce" target="_blank">
+                            <button class="btn_repo"><img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github">REPO</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Company Website - Panel -->
+                <div class="cards--proyectos" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/images/panelEmpresa.jpeg" alt="Company Website Panel">
+                    </div>
+                    <div class="container_textCard--proyectos">
+                        <h2>Company Website - Panel</h2>
+                        <p>Sitio web corporativo con panel de administración personalizado.</p>
+                    </div>
+                    <div class="container_btn--proyectos">
+                        <a href="https://github.com/NewtonSupreme/SmartTech-Panel" target="_blank">
+                            <button class="btn_repo"><img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github">REPO</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- APP - Reconocimiento Facial -->
+                <div class="cards--proyectos" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/images/reconocimientoFacial.jpeg" alt="APP Reconocimiento Facial">
+                    </div>
+                    <div class="container_textCard--proyectos">
+                        <h2>APP - Reconocimiento Facial</h2>
+                        <p>Aplicación con inteligencia artificial para identificación facial.</p>
+                    </div>
+                    <div class="container_btn--proyectos">>
+                        <a href="https://github.com/NewtonSupreme/Reconocimiento-Facial" target="_blank">
+                            <button class="btn_repo"><img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github">REPO</button>
+                        </a>
+                    </div>
+                </div>
+            
+                <!-- Control - Base de Datos UBA -->
+                <div class="cards--proyectos" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/images/ControlUBA.jpeg" alt="Control y Base de Datos UBA">
+                    </div>
+                    <div class="container_textCard--proyectos">
+                        <h2>Base de Datos - SC</h2>
+                        <p>Servicio Comunitario Base de Datos y Control de Asistencias con Google Sheets e implementacion de IA.</p>
+                    </div>
+                    <div class="container_btn--proyectos">>
+                        <button class="btn_demo">
+                            <img src="./assets/images/icon-demoProyecto.png" alt="Demostración">
+                            No disponible
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Contacto -->
+<section class="contacto" id="contacto">
+    <h1 data-section="contacto" data-value="title" data-aos="fade-up">Contacto</h1>
+
+    <div class="container_box--contacto" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="container--contacto">
+            <div class="container_text--contacto">
+                <p data-section="contacto" data-value="text">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
+            </div>
+
+            <!-- Formulario modificado con FormSubmit -->
+            <form 
+                id="form" 
+                class="form-contact" 
+                action="https://formsubmit.co/ytleandroguerra100yt@hotmail.com" 
+                method="POST"
+            >
+                <!-- Campos ocultos para configuración -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://tudominio.com/gracias.html">
+                <input type="hidden" name="_template" value="table"> <!-- Formato de correo -->
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portafolio">
+
+                <!-- Campos del formulario (manteniendo tus IDs y names) -->
+                <input id="nombre" type="text" name="name" placeholder="Nombre | Name" required>
+                <input id="email" type="email" name="email" placeholder="E-mail" required>
+                <input id="asunto" type="text" name="affair" placeholder="Asunto | Subject" required>
+                <textarea id="mensaje" cols="20" rows="4" name="message" placeholder="Mensaje | Message" required></textarea>
+
+                <div class="btn_form--contacto">
+                    <button id="btn-enviar" type="submit" data-section="contacto" data-value="btn-enviar">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript para manejar el envío sin recargar la página -->
+<script>
+    document.getElementById('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = document.getElementById('btn-enviar');
+        btn.textContent = 'Enviando...';
+        btn.disabled = true;
+
+        fetch(this.action, {
+            method: 'POST',
+            body: new FormData(this),
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Mensaje enviado con éxito');
+                this.reset();
+            } else {
+                alert('Error al enviar, intenta nuevamente');
+            }
+        })
+        .catch(error => alert('Error: ' + error))
+        .finally(() => {
+            btn.textContent = 'Enviar';
+            btn.disabled = false;
+        });
+    });
+</script>
+    </main>
+
+    <footer>
+        <div class="contianer--footer">
+            <div class="container_redes-footer">
+                <a href="#" target="_blank">
+                    <img src="./assets/images/icon-linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="./assets/images/icon-github.png" alt="GitHub">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="./assets/images/icon-codepen.png" alt="CodePen" class="icon_codepen--footer">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="./assets/images/icon-instagram.png" alt="Instagram"">
+                </a>
+            </div>
+
+            <div class="container_text--footer">
+                <span>Copyright © | Coded with</span>
+                <span>by</span>
+                <span>Leandro Marquez</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="float-buttons">
+        <!-- Botón WhatsApp -->
+        <a href="https://wa.me/584142279708" class="whatsapp-float" target="_blank" aria-label="Chat por WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <div class="particles"></div>
+        </a>
+        
+        <!-- Botón Ir arriba (existente) -->
+        <div class="go-top-container">
+            <div class="go-top-button">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Mi script -->
+    <script src="./script.js"></script>
+</body>
+</html>
